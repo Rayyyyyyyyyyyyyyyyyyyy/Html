@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tb1 {
+            width: 400px;
+            border: 4px solid blue;
+            border-collapse: collapse;
+
+
+        }
+
+        th,
+        td {
+            border: 2px solid blue;
+        }
+
+        thead {
+            background-color: brown;
+            border-bottom: 3px double #66B3FF;
+            color: burlywood;
+        }
+        tbody tr:nth-child(2n) {
+            background-color:darkslategray;
+        }
+
+        tbody {
+            background-color: #FF9224;
+            color: burlywood;
+            text-align: center;
+            
+
+
+        }
+
+        tr:hover {
+            background-color: crimson;
+        }
+
+        td:hover {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <table class='tb1'>
+        <thead>
+            <tr>
+                <th>電信公司</th>
+                <th>客服電話</th>
+                <th>網址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>中華最爛</td>
+                <td>02206546</td>
+                <td>
+                    <a href="https://www.cht.com.tw/home/consumer">點這</a>
+                </td>
+            </tr>
+            <tr>
+                <td>遠傳超遠</td>
+                <td>456495798</td>
+                <td>
+                    <a href="https://www.fetnet.net/">點這</a>
+                </td>
+            </tr>
+            <tr>
+                <td>台灣最近沒訊號</td>
+                <td>456425161</td>
+                <td>
+                    <a href="https://www.taiwanmobile.com/">點這</a>
+                </td>
+            </tr>
+            <tr>
+                <td>亞太還活著?</td>
+                <td>5445464</td>
+                <td>
+                    <a href="https://www.aptg.com.tw/">點這</a>
+                </td>
+            </tr>
+            <tr>
+                <td>台灣之星好像是威寶</td>
+                <td>45498784</td>
+                <td>
+                    <a href="https://www.tstartel.com/">點這</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class=tb1>
+        <thead>
+            <tr style="border:4px double blue;">
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+
+                <td colspan="2">2</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

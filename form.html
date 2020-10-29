@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        .bd1 {
+            width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 30px;
+        }
+
+        .asd {
+            width: 400px;
+            border-bottom: 2px dashed #5B5B5B;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .qwe {
+            width: 400px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .la1 {
+            width: 100px;
+            float: left;
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        fieldset {
+            width: 500px;
+            border-radius: 20px;
+            border: 2px double #642100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=bd1>
+
+        <form>
+            <fieldset>
+                <legend>資料</legend>
+                <div class="asd">
+                    <label for="n1" class="la1">姓名:</label>
+                    <input type="text" name="name" id="n1" autofocus>
+
+                </div>
+                <div class="asd">
+                    <label for="u1" class=la1>帳號:</label>
+                    <input type="text" name="user" id="u1" required>
+                </div>
+                <div class=asd>
+                    <label for="p1" class="la1">密碼:</label>
+                    <input type="password" name='pwd' id='p1' maxlength='8' required>
+                </div>
+                <div class=asd>
+                    <label for="" class=la1>性別:</label>
+                    <label>
+                        <input type="radio" name='gender' value='man'>男
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="femal">女
+                    </label>
+                </div>
+                <div class="asd">
+                    <label for="id1" class="la1">身分證字號:</label>
+                    <input type="text" name='id1' id='id1' required maxlength="10" pattern=[a-zA-Z]{1}[1-2]{1}\d{8}>
+
+                </div>
+                <div class=asd>
+                    <label class=la1 for="a1">身高:</label>
+                    <input type="text" name="account" id="a1">
+                </div>
+
+                <div class=asd>
+                    <label class=la1 for="w1">體重:</label>
+                    <input type="text" name='w' id='w1'>
+                </div>
+                <div class=asd>
+                    <label for="e1" class="la1">email:</label>
+                    <input type="email" name="email" id="e1">
+                </div>
+                <div class=asd>
+                    <label for="t1" class="la1">電話:</label>
+                    <input type="tel" name='tel' id='t1'>
+                </div>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>資料二</legend>
+                <div class="asd">
+                    <label for="" class="la1">興趣:</label>
+                    <input type="checkbox" name="hobby" value='music'>音樂
+                    <input type="checkbox" name="hobby" value='sport'>運動
+                    <input type="checkbox" name="hobby" value='movie'>電影
+                    <input type="checkbox" name="hobby" value='read'>閱讀
+                </div>
+                <div class="asd">
+                    <label for="" class=la1>縣市:</label>
+                    <select name="livingIn" id="">
+                        <option value="" selected>選擇</option>
+                        <option value="TPE">台北市</option>
+                        <option value="TPH">新北市</option>
+                        <option value="TYU">桃園市</option>
+                        <option value="HSC">新竹市</option>
+                        <option value="TNN">臺南市</option>
+                        <option value="KHH">高雄市</option>
+                    </select>
+                </div>
+                <div class=asd>
+                    <label for="" class=la1>上傳:</label>
+                    <input type="file" multiple>
+                </div>
+                <div class=asd>
+                    <label for="t1" class=la1>生日:</label>
+                    <input type='date' name="birth" id="t1">
+                </div>
+                <div class="asd">
+                    <label for="" class="la1">blog:</label>
+                    <input type="url" name="u1" list="list1">
+                    <datalist id='list1'>
+                        <option value="https://www.google.com/">google
+                        <option value="https://tw.yahoo.com/">yahoo
+                        <option value="https://zh-tw.facebook.com/">facebook
+                    </dataList>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>意見</legend>
+                <div class=asd>
+                    <label class=la1 for="memo">what:</label>
+                    <textarea name="" id="memo" cols="20" rows="5" placeholder="這裡拉"></textarea>
+                </div>
+            </fieldset>
+
+
+
+
+
+
+            <div class=qwe>
+                <input type="submit" value="送出">
+                <input type="reset" value="清除">
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>

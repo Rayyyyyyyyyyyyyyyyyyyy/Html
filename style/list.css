@@ -1,0 +1,8 @@
+.list{
+    list-style-type:none;
+    list-style-image: url(../picter/images.jfif);
+}
+.list2{
+
+  list-style-type: lower-roman;
+}

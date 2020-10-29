@@ -1,0 +1,18 @@
+
+@font-face {
+
+    src: url(../fonts/JustOldFashion.ttf);
+    font-family: f1;
+}
+@font-face {   
+    src: url(../fonts/SCRIPTIN.ttf);
+    font-family:f2 ;
+}
+.f1{
+    font-family: 'f1';
+}
+.f2{
+    font-family: 'f2';
+    font-size: 80px;
+}
+.aqq{font-family: Secular One;}
